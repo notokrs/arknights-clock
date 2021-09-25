@@ -11,11 +11,11 @@ var clock = new Vue({
 		wallpaperPath: "",
 	},
 	beforeUnmount() {
-		clearInterval(this.interval);
+		clearInterval(time);
+		clearInterval(timeWatch);
 	},
 	mounted() {
 		getData(this);
-		setInterval(timeWatcher(this), 60000);
 
 		document.onreadystatechange = function () {
 			if (document.readyState !== "complete") {
@@ -27,11 +27,14 @@ var clock = new Vue({
 	},
 });
 
+let date;
+
 updateTime();
-setInterval(updateTime, 1000);
+let time = setInterval(updateTime, 1000);
+let timeWatch = setInterval(timeWatcher, 3000);
 
 function updateTime() {
-	let date = new Date();
+	date = new Date();
 	let dateOptions = {
 		weekday: "long",
 		year: "numeric",
@@ -50,7 +53,7 @@ function updateTime() {
 }
 
 function updateWallpaper(response) {
-	let hours = new Date().getHours();
+	let hours = date.getHours();
 	let result;
 
 	if (hours >= 3 && hours <= 5) {
@@ -85,8 +88,6 @@ function randomResult(response, time) {
 		}
 	});
 
-	console.log(imgResult.length);
-
 	if (imgResult.length >= 1) {
 		let imgRandomIndex = Math.floor(Math.random() * imgResult.length);
 
@@ -110,31 +111,21 @@ function makeResult(title, desc, logo, images) {
 	};
 }
 
-function timeWatcher(app) {
-	let hours = new Date().getHours();
+function timeWatcher() {
+	let hours = date.getHours();
 
 	switch (hours) {
 		case 0:
-			getData(app);
-			break;
 		case 3:
-			getData(app);
-			break;
 		case 6:
-			getData(app);
-			break;
 		case 11:
-			getData(app);
-			break;
 		case 15:
-			getData(app);
-			break;
 		case 18:
-			getData(app);
-			break;
 		case 20:
-			getData(app);
+			getData(clock);
 			break;
+		default:
+			console.log("Time Watcher : " + hours);
 	}
 }
 
