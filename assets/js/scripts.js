@@ -1,4 +1,4 @@
-var clock = new Vue({
+let clock = new Vue({
 	el: "#root",
 	data: {
 		completed: false,
@@ -12,11 +12,9 @@ var clock = new Vue({
 	},
 	beforeUnmount() {
 		clearInterval(time);
-		clearInterval(timeWatch);
+		clearTimeout(timeWatch);
 	},
 	mounted() {
-		getData(this);
-
 		document.onreadystatechange = function () {
 			if (document.readyState !== "complete") {
 				clock.completed = false;
@@ -31,7 +29,12 @@ let date;
 
 updateTime();
 let time = setInterval(updateTime, 1000);
-let timeWatch = setInterval(timeWatcher, 3000);
+let millisNextTime = timeWatcher();
+let timeWatch = setTimeout(() => {
+	getData(clock);
+}, millisNextTime);
+
+getData(clock);
 
 function updateTime() {
 	date = new Date();
@@ -56,7 +59,9 @@ function updateWallpaper(response) {
 	let hours = date.getHours();
 	let result;
 
-	if (hours >= 3 && hours <= 5) {
+	if (hours >= 0 && hours <= 2) {
+		result = randomResult(response, "midnight");
+	} else if (hours >= 3 && hours <= 5) {
 		result = randomResult(response, "dawn");
 	} else if (hours >= 6 && hours <= 10) {
 		result = randomResult(response, "morning");
@@ -68,8 +73,6 @@ function updateWallpaper(response) {
 		result = randomResult(response, "evening");
 	} else if (hours >= 20 && hours <= 23) {
 		result = randomResult(response, "night");
-	} else if (hourse >= 0 && hours <= 2) {
-		result = randomResult(response, "midnight");
 	}
 
 	return result;
@@ -113,23 +116,106 @@ function makeResult(title, desc, logo, images) {
 
 function timeWatcher() {
 	let hours = date.getHours();
+	let millis0 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate() + 1,
+			0,
+			0,
+			0,
+			0
+		).getTime() - date;
 
-	switch (hours) {
-		case 0:
-		case 3:
-		case 6:
-		case 11:
-		case 15:
-		case 18:
-		case 20:
-			getData(clock);
-			break;
-		default:
-			console.log("Time Watcher : " + hours);
+	let millis3 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate(),
+			3,
+			0,
+			0,
+			0
+		).getTime() - date;
+
+	let millis6 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate(),
+			6,
+			0,
+			0,
+			0
+		).getTime() - date;
+
+	let millis11 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate(),
+			0,
+			0,
+			0,
+			0
+		).getTime() - date;
+
+	let millis15 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate(),
+			15,
+			0,
+			0,
+			0
+		).getTime() - date;
+
+	let millis18 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate(),
+			18,
+			0,
+			0,
+			0
+		).getTime() - date;
+
+	let millis20 =
+		new Date(
+			date.getFullYear(),
+			date.getMonth(),
+			date.getDate(),
+			20,
+			0,
+			0,
+			0
+		).getTime() - date;
+
+	let millisResult;
+
+	if (hours >= 0 && hours <= 2) {
+		millisResult = millis3;
+	} else if (hours >= 3 && hours <= 5) {
+		millisResult = millis6;
+	} else if (hours >= 6 && hours <= 10) {
+		millisResult = millis11;
+	} else if (hours >= 11 && hours <= 14) {
+		millisResult = millis15;
+	} else if (hours >= 15 && hours <= 17) {
+		millisResult = millis18;
+	} else if (hours >= 18 && hours <= 19) {
+		millisResult = millis20;
+	} else if (hours >= 20 && hours <= 23) {
+		millisResult = millis0;
 	}
+
+	return millisResult;
 }
 
 function getData(app) {
+	millisNextTime = timeWatcher();
 	axios.get("./assets/json/wallpaper.json").then((response) => {
 		let result = updateWallpaper(response.data);
 		if (result != null) {
