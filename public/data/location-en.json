@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Rhodes Island",
+    "logo": "logo_rhodes_island.png",
+    "desc": "Rhodes Island Pharmaceuticals Inc. is a registered drug R&D company working on medical solutions for countries, organizations, and individuals infected with Oripathy. To achieve their goal, Rhodes Island recruits talent from all around the world, regardless of background, experience, or condition. Furthermore, Rhodes Island is committed to providing the best medical and living conditions for its employees, attracting movers and shakers — Infected or not — to try to change the world.",
+    "images": [
+      {
+        "time": "midnight",
+        "file": "midnight_rhodes_01.png"
+      },
+      {
+        "time": "dawn",
+        "file": "dawn_rhodes_01.png"
+      },
+      {
+        "time": "morning",
+        "file": "morning_rhodes_01.png"
+      },
+      {
+        "time": "day",
+        "file": "day_rhodes_01.png"
+      },
+      {
+        "time": "afternoon",
+        "file": "afternoon_rhodes_01.png"
+      },
+      {
+        "time": "evening",
+        "file": "evening_rhodes_01.png"
+      },
+      {
+        "time": "night",
+        "file": "night_rhodes_01.png"
+      }
+    ]
+  },
+  {
+    "title": "Lungmen, Yan",
+    "logo": "logo_lungmen.png",
+    "desc": "Lungmen is a city-state in the world of Arknights that is located between Kazdel, Ursus, and Yan. A prosperous, advanced nomadic city, Lungmen is technically part of Yan (which can be seen from their nearly identical coat-of-arms), but acts as a \"special economic zone\" with greater autonomy such as a largely independent government and economy, making it more progressive and open to foreign influences than Yan.",
+    "images": [
+      {
+        "time": "midnight",
+        "file": "midnight_lungmen_01.png"
+      },
+      {
+        "time": "dawn",
+        "file": "dawn_lungmen_01.png"
+      },
+      {
+        "time": "morning",
+        "file": "morning_lungmen_01.png"
+      },
+      {
+        "time": "day",
+        "file": "day_lungmen_01.png"
+      },
+      {
+        "time": "afternoon",
+        "file": "afternoon_lungmen_01.png"
+      },
+      {
+        "time": "evening",
+        "file": "evening_lungmen_01.png"
+      },
+      {
+        "time": "night",
+        "file": "night_lungmen_01.png"
+      }
+    ]
+  },
+  {
+    "title": "Chernobog, Ursus Empire",
+    "logo": "logo_ursus.png",
+    "desc": "Chernobog (Чернобог) is a nomadic city of Ursus. Ursus, formally known as Empire of Ursus or Ursus Empire, is a country in the world of Arknights. The largest country in Terra which borders Kazimierz, Leithania, Sami and Yan, Ursus is famed for its military might and the physical prowess of its mostly Ursin inhabitants. It is a monarchy with the Emperor as the head of state, although a power struggle between the \"old guard\" aristocracy and the military leaders is happening behind the scenes.",
+    "images": [
+      {
+        "time": "midnight",
+        "file": "midnight_chernobog_01.png"
+      },
+      {
+        "time": "dawn",
+        "file": "dawn_chernobog_01.png"
+      },
+      {
+        "time": "morning",
+        "file": "morning_chernobog_01.png"
+      },
+      {
+        "time": "day",
+        "file": "day_chernobog_01.png"
+      },
+      {
+        "time": "evening",
+        "file": "evening_chernobog_01.png"
+      },
+      {
+        "time": "afternoon",
+        "file": "afternoon_chernobog_01.png"
+      },
+      {
+        "time": "night",
+        "file": "night_chernobog_01.png"
+      }
+    ]
+  }
+]

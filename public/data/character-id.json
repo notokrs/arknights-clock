@@ -1,0 +1,56 @@
+[
+  {
+    "name": "SilverAsh",
+    "realName": "Enciodes Silverash",
+    "organization": "Karlan Trade",
+    "desc": "SilverAsh adalah panglima perang Kjerag, ketua dari Karlan Trade Co., dan kepala di Keluarga Silverash. Dia memiliki pandangan yang unik pada ekonomi, perdagangan, politik internasional, diplomasi dan perencanaan strategi. Dia memberikan dukungan strategi untuk beberapa operasi Rhodes Island. Karena tujuan utamanya masih tidak diketahui dan dia tidak memiliki sikap yang kooperatif, disarankan bahwa kita harus tetap bersikap konservatif untuk menghindari risiko saat bekerja sama dengannya.",
+    "logo": "logo_karlan.png",
+    "images": [
+      {
+        "file": "silverash_01.png"
+      },
+      {
+        "file": "silverash_02.png"
+      },
+      {
+        "file": "silverash_03.png"
+      }
+    ]
+  },
+  {
+    "name": "Amiya",
+    "realName": "",
+    "organization": "Rhodes Island",
+    "desc": "Wajah publik dari Rhodes Island dan merupakan eksekutif tertingginya. Sekalipun Amita tampak seperti gadis muda yang tidak memiliki pengalaman, dia dipercaya oleh banyak orang dan sangat mampu menyandang posisinya. Amiya sekarang memimpin bahtera itu berjuang untuk masa depan Infected dan membasmi pengaruh buruk dari Originium dari bumi.",
+    "logo": "logo_rhodes_island.png",
+    "images": [
+      {
+        "file": "amiya_01.png"
+      },
+      {
+        "file": "amiya_02.png"
+      },
+      {
+        "file": "amiya_03.png"
+      }
+    ]
+  },
+  {
+    "name": "Ch'en",
+    "realName": "Ch'en Hui-chieh",
+    "organization": "Lungmen Guard Departement",
+    "desc": "Ch'en, kepala Unit Inspeksi Khusus Lungmen Guard Departement, lulus dari Royal Victorian Guard School dengan nilai yang bagus dan pencapaian yang luar biasa. Selama dia berada di departemen, dia menumpas kejahatan, melawan pelaku kekerasan, melacak buronan bersenjata, dan meruntuhkan penjahat internasional. Sekarang bekerja di Rhodes Island, memberikan komando taktis di sana.",
+    "logo": "logo_lgd.png",
+    "images": [
+      {
+        "file": "chen_01.png"
+      },
+      {
+        "file": "chen_02.png"
+      },
+      {
+        "file": "chen_03.png"
+      }
+    ]
+  }
+]

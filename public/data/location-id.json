@@ -1,0 +1,107 @@
+[
+  {
+    "title": "Rhodes Island",
+    "logo": "logo_rhodes_island.png",
+    "desc": "Rhodes Island Pharmaceritocals Inc. adalah perusahaan pengembangan dan penelitian obat-obatan terdaftar yang memberikan pelayanan medis untuk berbagai negara, organisasi dan perseorangan yang terinfeksi Oripati. Untuk mencapai tujuan tersebut, Rhodes Island merekrut ahli dari seluruh dunia, apapun latar belakang, pengalaman dan kondisinya. Selain itu, Rhodes Island berkomitmen untuk menyediakan kondisi medis dan hidup bagi yang para pekerjanya, memikat orang-orang yang berpengaruh —Infected maupun tidak— untuk membuat perubahan di dunia.",
+    "images": [
+      {
+        "time": "midnight",
+        "file": "midnight_rhodes_01.png"
+      },
+      {
+        "time": "dawn",
+        "file": "dawn_rhodes_01.png"
+      },
+      {
+        "time": "morning",
+        "file": "morning_rhodes_01.png"
+      },
+      {
+        "time": "day",
+        "file": "day_rhodes_01.png"
+      },
+      {
+        "time": "afternoon",
+        "file": "afternoon_rhodes_01.png"
+      },
+      {
+        "time": "evening",
+        "file": "evening_rhodes_01.png"
+      },
+      {
+        "time": "night",
+        "file": "night_rhodes_01.png"
+      }
+    ]
+  },
+  {
+    "title": "Lungmen, Yan",
+    "logo": "logo_lungmen.png",
+    "desc": "Lungmen adalah negara-kota di dunia Arknights yang terletak di antara Kazdel, Ursus dan Yan. Lungmen, sebuah kota nomadik yang makmur dan maju, secara teknis merupakan bagian dari Yan (yang dapat dilihat dari lambang negara mereka yang identik), tetapi berlaku \"zona ekonomi khusus\" dengan otonomi yang lebih besar seperti pemerintahan dan ekonomi independen yang besar, membuatnya lebih progresif dan terbuka bagi pengaruh asing daripada Yan.",
+    "images": [
+      {
+        "time": "midnight",
+        "file": "midnight_lungmen_01.png"
+      },
+      {
+        "time": "dawn",
+        "file": "dawn_lungmen_01.png"
+      },
+      {
+        "time": "morning",
+        "file": "morning_lungmen_01.png"
+      },
+      {
+        "time": "day",
+        "file": "day_lungmen_01.png"
+      },
+      {
+        "time": "afternoon",
+        "file": "afternoon_lungmen_01.png"
+      },
+      {
+        "time": "evening",
+        "file": "evening_lungmen_01.png"
+      },
+      {
+        "time": "night",
+        "file": "night_lungmen_01.png"
+      }
+    ]
+  },
+  {
+    "title": "Chernobog, Ursus Empire",
+    "logo": "logo_ursus.png",
+    "desc": "Chernobog (Чернобог), sebuah kota nomadik di Ursus, yang sebelumnya dikenal sebagai Empire of Ursus atau Ursus Empire, adalah sebuah negara di dunia Arknights. Menjadi negara terbesar di Terra yang berbatasan dengan Kazimierz, Leithania, Sami dan Yan, Ursus dikenal dengan kemampuan militer dan kekuatan fisik dari penduduk Ursus. Negara ini merupakan sebuah monarki yang dipimpin oleh Emperor sebagai kepala negara, tetapi terjadi perebutan kekuasaan antara pihak bangsawan \"kuasa lama\" dan pimpinan militer terjadi di latar belakang.",
+    "images": [
+      {
+        "time": "midnight",
+        "file": "midnight_chernobog_01.png"
+      },
+      {
+        "time": "dawn",
+        "file": "dawn_chernobog_01.png"
+      },
+      {
+        "time": "morning",
+        "file": "morning_chernobog_01.png"
+      },
+      {
+        "time": "day",
+        "file": "day_chernobog_01.png"
+      },
+      {
+        "time": "evening",
+        "file": "evening_chernobog_01.png"
+      },
+      {
+        "time": "afternoon",
+        "file": "afternoon_chernobog_01.png"
+      },
+      {
+        "time": "night",
+        "file": "night_chernobog_01.png"
+      }
+    ]
+  }
+]

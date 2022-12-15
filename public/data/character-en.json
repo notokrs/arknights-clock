@@ -1,0 +1,56 @@
+[
+  {
+    "name": "SilverAsh",
+    "realName": "Enciodes Silverash",
+    "organization": "Karlan Trade",
+    "desc": "SilverAsh is a Kjerag warlord, chairman of the Karlan Trade Co., and is current Chief of the Silverash Family. He has unique views on economics, trade, international politics, diplomacy, and strategic planning. He provides strategic support for some Rhodes Island operations. In view of the fact that his true purposes are unknown and he doesn't have the most cooperative attitude, it is advised that we maintain a conservative attitude in order to minimize risks when working with him.",
+    "logo": "logo_karlan.png",
+    "images": [
+      {
+        "file": "silverash_01.png"
+      },
+      {
+        "file": "silverash_02.png"
+      },
+      {
+        "file": "silverash_03.png"
+      }
+    ]
+  },
+  {
+    "name": "Amiya",
+    "realName": "",
+    "organization": "Rhodes Island",
+    "desc": "The public face of Rhodes Island and its top executive. Although Amiya appears to be a young and inexperienced girl, she is universally  trusted and highly qualified for her position. Amiya now leads the island in fighting for the future of the Infected and striving to exorcise the dark shadow of Originium from the land.",
+    "logo": "logo_rhodes_island.png",
+    "images": [
+      {
+        "file": "amiya_01.png"
+      },
+      {
+        "file": "amiya_02.png"
+      },
+      {
+        "file": "amiya_03.png"
+      }
+    ]
+  },
+  {
+    "name": "Ch'en",
+    "realName": "Ch'en Hui-chieh",
+    "organization": "Lungmen Guard Departement",
+    "desc": "Ch'en, head of the Lungmen Guard Department's Special Inspection Unit, graduated from the Royal Victorian Guard School with superb grades and outstanding achievements. During her time with the Department, she cracked down on crime, fought violent offenders, tracked down armed fugitives, and brought down international criminals. Now works at Rhodes Island, providing on-site tactical command.",
+    "logo": "logo_lgd.png",
+    "images": [
+      {
+        "file": "chen_01.png"
+      },
+      {
+        "file": "chen_02.png"
+      },
+      {
+        "file": "chen_03.png"
+      }
+    ]
+  }
+]
