@@ -157,27 +157,27 @@ function App() {
   }, []);
   useEffect(() => {
     const getData = async () => {
+      await checkInternet()
+        .then(() => {
+          pathSettings.current = pathOnline;
+          langSet(settings.loreLang, true);
+        })
+        .catch(() => {
+          pathSettings.current = pathOffline;
+          langSet(settings.loreLang, false);
+        });
+      getWallpaper(dataSettings.current, pathSettings.current);
+    };
+
+    if (settings.offlineMode !== undefined) {
       if (settings.offlineMode === true) {
         pathSettings.current = pathOffline;
         langSet(settings.loreLang, false);
-      } else {
-        await checkInternet()
-          .then(() => {
-            pathSettings.current = pathOnline;
-            langSet(settings.loreLang, true);
-          })
-          .catch(() => {
-            pathSettings.current = pathOffline;
-            langSet(settings.loreLang, false);
-          });
-      }
-
-      if (Object.keys(dataSettings.current).length >= 1) {
         getWallpaper(dataSettings.current, pathSettings.current);
+      } else {
+        getData();
       }
-    };
-
-    getData();
+    }
   }, [getWallpaper, settings.loreLang, settings.offlineMode]);
 
   // Component

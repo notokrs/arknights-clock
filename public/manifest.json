@@ -1,7 +1,7 @@
 {
   "name": "Arknights Clock",
   "description": "Change your browser homepage to Arknights World.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 3,
   "background": {
     "service_worker": "./static/js/background.js"

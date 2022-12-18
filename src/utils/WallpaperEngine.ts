@@ -154,16 +154,14 @@ async function checkInternet() {
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), 1000);
 
-  try {
-    return await fetch('https://google.com', {
-      method: 'HEAD',
-      cache: 'no-store',
-      mode: 'no-cors',
-      signal: controller.signal,
-    });
-  } finally {
-    return clearTimeout(timeoutId);
-  }
+  return await fetch('https://google.com', {
+    method: 'HEAD',
+    mode: 'no-cors',
+    cache: 'no-store',
+    signal: controller.signal,
+  }).finally(() => {
+    clearTimeout(timeoutId);
+  });
 }
 
 export {getDataLoc, randomResultChar, checkInternet};
